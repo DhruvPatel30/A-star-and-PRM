@@ -23,4 +23,4 @@ Two Planners are used to solve this problem
     2. Probabilistic Roadmap (PRM)
 ***
 
-![image] (https://github.com/DhruvPatel30/A-star-and-PRM/blob/master/images/world_1.png)
+![] (images/world_1.png)
