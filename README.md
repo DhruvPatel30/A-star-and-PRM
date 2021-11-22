@@ -22,5 +22,12 @@ Two Planners are used to solve this problem
     1. A* Planner
     2. Probabilistic Roadmap (PRM)
 ***
-
+The figure below shows the environment created. Green patches represent the bushes and blue box represent the car. The dimensions of the car are as follows:
+***
+    width - 2.2 meters
+    length - 4.9 meters
+    wheelbase - 3 meters
+    minimum turning radius - 13 meters
+    maximum velocity - 10 meters per second
+***
 ![](images/world_1.png)
