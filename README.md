@@ -67,7 +67,7 @@ The folder PRM include the required codes to exectue the PRM planner, Global A* 
 
 The figure belows shows the glimpse of Probabilistic Roapmap
 
-<img src="images/world_1.png" width="480">
+<img src="images/PRM1.png" width="480">
 
 #### Execution 
 ***
