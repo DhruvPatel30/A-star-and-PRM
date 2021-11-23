@@ -50,7 +50,10 @@ The folder A_star include the required codes to exectue the A* planner. It inclu
     python main.py
 ***
 #### Demonstration of A* Planner
-https://user-images.githubusercontent.com/30457807/143067333-900df55d-cf21-4e2a-90fb-4aed01279e17.mp4
+
+https://user-images.githubusercontent.com/30457807/143119940-e4defdc8-41f5-48a9-aeff-184e3d755a6f.mp4
+
+
 
 2) PRM - The roadmap was created before the start of the simulation. The start and the goal node was connected with the roadmap and global A* was applied to search the path between the start node and goal node, without considering collison check. After that, to travel between any 2 nodes obtained from the global A*, local A* was executed. While executing local A*, the collison check was not taken in consideration.  
 
@@ -76,7 +79,7 @@ The figure belows shows the glimpse of Probabilistic Roapmap
 
 #### Demonstration of PRM, Global and Local A* Planner
 
-https://user-images.githubusercontent.com/30457807/143098470-a3309873-7994-4809-b600-4b9a097fb134.mp4
+https://user-images.githubusercontent.com/30457807/143120199-e0845d1a-22c7-4e8a-9d27-50ba70cde0ab.mp4
 
 
 
