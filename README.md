@@ -30,4 +30,56 @@ The figure below shows the environment created. Green patches represent the bush
     minimum turning radius - 13 meters
     maximum velocity - 10 meters per second
 ***
-![](images/world_1.png)
+<img src="images/world_1.png" width="480">
+
+## Implementation
+
+1) A* Planner - To implement the A* planner, the next possible states were choosen according to the kinematic equation of the ackerman drive instead of grid-based search. The robot, considering it's dimensions, was placed at the possible states and the algorithm for collison check was executed. If there was no collison at the possible states, the state were considered to be valid. The cost function of the Planner includes the cost to travel from the current node to the next possible node and heuristic cost from the next possible state to the goal node.
+
+The folder A_star include the required codes to exectue the A* planner. It includes
+***
+    1) main.py - The main file which calls the main function of the environment.py file.
+    2) environment.py - This file creates the environment using pygame library. It also calls the A* planner which is in the A_star.py
+    3) A_star.py - This file executes the A* planner.
+    4) robot.py - This file creates and draws the robot in the environment. Also, it includes the collision checking algorithm.
+    5) global_variables.py - This file include the global variables used in different .py files.
+    
+***
+#### Execution 
+***
+    python main.py
+***
+#### Demonstration of A* Planner
+https://user-images.githubusercontent.com/30457807/143067333-900df55d-cf21-4e2a-90fb-4aed01279e17.mp4
+
+2) PRM - The roadmap was created before the start of the simulation. The start and the goal node was connected with the roadmap and global A* was applied to search the path between the start node and goal node, without considering collison check. After that, to travel between any 2 nodes obtained from the global A*, local A* was executed. While executing local A*, the collison check was not taken in consideration.  
+
+The folder PRM include the required codes to exectue the PRM planner, Global A* planner and Local A* planner. It includes
+***
+    1) main.py - The main file which calls the main function of the environment.py file.
+    2) environment.py - This file creates the environment using pygame library. It also calls the PRM Planner, Global A* planner and Local A* Planner.
+    3) PRM.py - This file creates the probabilistic roadmap.
+    4) A_star.py - This file contains the function of global as well as local A* planner.
+    5) robot.py - This file creates and draws the robot in the environment. Also, it includes the collision checking algorithm.
+    6) global_variables.py - This file include the global variables used in different .py files.
+    
+***
+
+The figure belows shows the glimpse of Probabilistic Roapmap
+
+<img src="images/world_1.png" width="480">
+
+#### Execution 
+***
+    python main.py
+***
+
+#### Demonstration of PRM, Global and Local A* Planner
+
+https://user-images.githubusercontent.com/30457807/143098470-a3309873-7994-4809-b600-4b9a097fb134.mp4
+
+
+
+
+
+
